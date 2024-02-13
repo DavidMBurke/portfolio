@@ -1,8 +1,34 @@
 <title>Contacts</title>
-<h1>Contacts</h1>
-<nav>
-    <ol>
-        <li><a href="../projects/index.html">projects</a></li>
-        <li><a href="../index.html">home</a></li>
-    </ol>
-</nav>
+<head>
+    <link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <h1 style="width:85%; font-size: 8vh;">Contact</h1>
+            <ol>
+                <li><a href="../projects/index.html">projects</a></li>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../resume/index.html">resume</a></li>
+                <li><a target="_blank" href="https://github.com/DavidMBurke">GitHub</a></li>
+            </ol>
+        </div>
+    </nav>
+    <form action="mailto: burkedm@mit.edu" method="post" enctype="text/plain">
+        <div class="form-list">
+            <div class="form-row">
+                <label>Email: </label>
+                <input name="email" type="email"/>
+            </div>
+            <div class="form-row">
+                <label>Subject: </label>
+                <input name="subject" />
+            </div>
+            <div class="form-row">
+                <label>Message: </label>
+                <textarea name="body"> </textarea>
+            </div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
