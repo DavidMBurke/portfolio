@@ -77,17 +77,19 @@ li {
 nav {
     --border-color: oklch(50% 10% 200 / 40%);
     margin-bottom: 2%;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: var(--border-color);
 }
 
 nav a {
     text-decoration: none;
+    height: 100%;
     flex: 1;
     color: inherit;
     text-align: center;
     padding: 0.5em;
+    padding-bottom: 0;
 }
 
 nav a:hover {
