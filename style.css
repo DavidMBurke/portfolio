@@ -1,5 +1,5 @@
 :root {
-    --color-accent: oklch(59% 19% 246);
+    --color-accent: oklch(59% 19% 246 / 40%);
 }
 
 body {
@@ -75,10 +75,11 @@ li {
 }
 
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     margin-bottom: 2%;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200)
+    border-bottom-color: var(--border-color);
 }
 
 nav a {
@@ -119,4 +120,10 @@ article {
 
 article h2 {
     margin: 0;
+}
+
+label.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
